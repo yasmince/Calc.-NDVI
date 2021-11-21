@@ -2,7 +2,7 @@ from flask import Flask, request
 
 ##from main import insertUsuario
 
-app = Flask("API")
+app = Flask(__name__)
 
 @app.route("/olamundo", methods=["GET"])
 def olaMundo():
