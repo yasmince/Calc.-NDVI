@@ -4,7 +4,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/olamundo", methods=["GET"])
+@app.route("/olamundo")
 def olaMundo():
     return {"planta": "Necessita de agua"}
 
