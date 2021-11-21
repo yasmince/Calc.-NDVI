@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-from main import insertUsuario
+##from main import insertUsuario
 
 app = Flask("API")
 
