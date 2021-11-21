@@ -4,9 +4,12 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/olamundo")
+@app.route("/olamundo", methods=["GET"])
 def olaMundo():
     return {"planta": "Necessita de agua"}
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 #@app.route("/cadastra/usuario", methods=["POST"])
 #def cadastraUsuario():
@@ -16,6 +19,5 @@ def olaMundo():
   #  usuario = insertUsuario(body["nome"], body["email"], body["senha"])
 
    # return usuario
-if __name__ == "__main__":
-    app.run(debug=True)
+
 
