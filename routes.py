@@ -4,8 +4,8 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/olamundo", methods=["GET"])
-def olaMundo():
+@app.route("/Planta", methods=["GET"])
+def Planta():
     return {"planta": "Necessita de agua"}
 
 if __name__ == "__main__":
